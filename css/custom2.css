@@ -1,0 +1,68 @@
+@font-face {
+	font-family: Fish;
+	src: url(../fonts/fish_chips.ttf);
+}
+
+html {
+	font-size: 10px;
+	font-family: Fish, Georgia, Verdana;
+	line-height: 10px;	
+	letter-spacing: 1px;
+	font-weight: 700;
+	box-sizing: border-box;
+}
+
+
+html, body {
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 16px;
+}
+
+.irresistiblepagebackground {
+	position: relative;
+	height: 85vh;
+	width: 100vw;
+	background: #f7f8f7;
+	color: #333;
+	text-align: center;
+	z-index: 50;
+}
+
+.irresistiblepage {
+	height: 100vh;
+	width: 80vw;
+	margin: 0 10vw 0 10vw;
+	background: #cbf5d4;
+	z-index: 51;
+
+}
+.irresistibleheader {
+	font-size: 3rem;
+	line-height: 3rem;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	padding: 5vh 0 0 0;
+	z-index: 52;
+}
+.linktopackages {
+	z-index:52;
+	width: 100%;
+	line-height: 6vh;
+	padding: 0 0 1vh 0;
+}
+
+.linktopackages a{
+	color: #D96946;
+}
+
+.deliveryoptions {
+	width: 100%;
+	height: 60%;
+	background: #333;
+	z-index: 52;
+}
