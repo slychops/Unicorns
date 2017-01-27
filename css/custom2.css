@@ -9,9 +9,12 @@ html {
 	line-height: 10px;	
 	letter-spacing: 1px;
 	font-weight: 700;
-	box-sizing: border-box;
+	
 }
 
+* {
+	box-sizing: border-box;
+}
 
 html, body {
 	height: 100vh;
@@ -21,29 +24,35 @@ html, body {
 }
 body {
 	font-size: 16px;
+
 }
 
-.irresistiblepagebackground {
+.pagebackground {
 	position: relative;
-	height: 85vh;
+	height: 96vh;
 	width: 100vw;
-	background: #f7f8f7;
 	color: #333;
 	text-align: center;
-	z-index: 50;
+	z-index: 50
+}
+#irresistiblepagebackground {
+	background: #f7f8f7;
 }
 
 .irresistiblepage {
-	height: 100vh;
-	width: 80vw;
-	margin: 0 10vw 0 10vw;
-	background: #cbf5d4;
+	height: 100%;
+	/*width: 80%;*/
+	max-width: 1228px;
+	margin-right: auto;
+	margin-left: auto;
+	/*margin: 0 10vw 0 10vw;*/
+	/*background: #cbf5d4;*/
 	z-index: 51;
 
 }
 .irresistibleheader {
 	font-size: 3rem;
-	line-height: 3rem;
+	line-height: 5vh;
 	letter-spacing: 4px;
 	text-transform: uppercase;
 	padding: 5vh 0 0 0;
@@ -52,17 +61,206 @@ body {
 .linktopackages {
 	z-index:52;
 	width: 100%;
+	/*width: 1228px;*/
 	line-height: 6vh;
 	padding: 0 0 1vh 0;
+	margin-bottom: 2vh;
 }
 
 .linktopackages a{
 	color: #D96946;
 }
 
-.deliveryoptions {
-	width: 100%;
-	height: 60%;
-	background: #333;
+.menuoptions {
+	/*width: 100%;*/
+	width: 1228px;
+	height: 65%;
+	min-height: 462px;
+	/*background: #333;*/
+	display: inline-flex;
+	/*margin: 0 3%;*/
 	z-index: 52;
+	color: #000;
+}
+
+.menuitem {
+	display: inline-block;
+	text-decoration: none;
+	/*width: 30%;*/
+	width: 388px;
+	height: 100%;
+	/*height: 462px;*/
+	color: #000;
+	font-weight: 600;
+	margin: 0 10px;
+	border: solid #bcbcbc;
+	border-width: 1px 0.5px 1px 1px; 
+	box-shadow: 0.1px 0.1px 0.1px #888;
+	transition-duration: 0.2s;
+}
+
+.menuitem:hover {
+	transform: translateY(-5px);
+	box-shadow: 2px 3px 10px #adaaaa;
+}
+.menuitem:hover .hidden-first{
+	opacity: 0.5;
+}
+.hidden-first {
+	/*position: relative;*/
+	height: 50%;
+	width: 388px;
+	background: #817676;	
+	top:0;
+	left:0;
+	transform: translate(0, -200%);
+	opacity: 0;
+	display: flex;
+}
+.try-this-out {
+	width: 80%;
+	height: 20%;
+	font-size: 4rem;	
+	line-height: 4rem;
+	margin:20% 10%;
+	padding: 10% 0 5% 0;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.orderimage {
+	height: 50%;
+	width: 100%;	
+}
+#orderimageone {
+	background: url('../images/special1.jpg');
+	background-size: cover;
+}
+#orderimagetwo {
+	background: url('../images/special2.jpg');
+	background-size: cover;
+}
+#orderimagethree {
+	background: url('../images/special3.jpg');
+	background-size: cover;
+}
+
+.orderinformation {
+	height: 50%;
+	width: 100%;
+	background: #fff;
+	padding: 20px;
+	display: block;
+	text-transform: uppercase;
+}
+.order-name {
+	padding-top: 2%;
+	height: 15%;
+	font-size: 2.5rem;
+}
+
+.order-name-alt {
+	padding-bottom: 30px;
+	padding-top:2%;
+	font-size: 1.7rem;
+	/*line-height: 27px;*/
+	/*height:57px;*/
+}
+
+.order-name-desc {
+	width: 100%;
+	/*height: 96px;*/
+	height: 30%;
+	margin-bottom: 10px;
+	display: block;
+	line-height: 2rem;
+	/*display:inline-block;*/
+}
+.more-info-promo{
+	/*background:red;*/
+	padding: 1rem;
+	height: 100%;
+	width: 33.33%;
+	float: left;
+}
+.promotion-info-bold {
+	font-size: 2.5rem;
+}
+.promotion-info-sub {
+	font-size: 1.5rem;
+	text-transform: none;
+}
+.red {
+	background:  red;
+}
+.blue {
+	background: blue;
+}
+.yellow {
+	background: green;
+}
+.order-now-but {
+	color: #fff;
+	font-size: 2.5rem;
+	line-height:2.5rem;
+	background: #E96946;
+	margin: 5% 5% 2% 5%;
+	padding: 4% 20%;
+	border-radius: 2px;
+	transition-duration: 0.1s;
+}
+.order-now-but:hover {
+	box-shadow: inset 0px 0px 2px black;
+	/*margin: 5.2% 5.1% 2.2% 5.1%;*/
+	margin: calc(5% + 2px) calc(5% + 2px) calc(2% + 2px) calc(5% + 1px);
+
+}
+
+
+#contact-us {
+	background: #bfefbf;
+	background: url("../images/contact-us-background.jpg") no-repeat center;
+	background-size: cover;
+}
+.contact-us-main {
+	max-width: 1250px;
+	height: 86%;
+	margin: 0 auto 7% auto;	
+	border: 1px solid black;
+	min-width: 1090px;
+	min-height: 555px;
+}
+.specsholder {
+	float: left;
+	height: 55.5%;
+	width: 48.5%;
+	min-width: 500px;
+	min-height: 300px;
+	margin: 4.5% 1.5% 5% 0;
+	padding: 40px 5% 0 4%;
+	border: 1px solid black;
+}
+#what-we-do {
+	background: #fff;
+	border: transparent;
+}
+.who-to-contact {
+	width:80%;
+	margin:0 10%;
+	height: 25%;
+	border: 1px solid black;
+	clear:left;	
+}
+
+.what-we-do-list {
+	margin-top: 1rem;
+	height: 14.5%;
+	line-height: 0;
+	font-size: calc(1.5rem + 0.2vw);
+	text-align: left;
+
+}
+.what-we-do-list img{
+	vertical-align: middle;
+	transform: translateY(-10%);
 }
