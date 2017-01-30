@@ -6,7 +6,226 @@
     src: url(fonts/fontName.woff);
 }*/
 
+
+@font-face {
+    font-family: 'Chalkduster';
+    src:url('webfonts_Chalkduster/Chalkduster.ttf.woff') format('woff'),
+        url('webfonts_Chalkduster/Chalkduster.ttf.svg#Chalkduster') format('svg'),
+        url('webfonts_Chalkduster/Chalkduster.ttf.eot'),
+        url('webfonts_Chalkduster/Chalkduster.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+}
+
 html, body {
 	height: 100%;
 	width: 100%;
+	background-color: #f7f8f7;
+}
+
+h1{ 
+font-family: "Chalkduster";
+}
+
+
+
+.header_wrapper{
+	height: 80vh;
+    width: 100%;
+    background: url('../images/caterwingsheader.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+
+#logo {
+  
+    width: 180px;
+    height: 60px;
+    left: 2px;
+    top: 3px;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    color: #fff;
+    font-family: "Chalkduster";
+    padding-top: 1.5%;
+    font-size: xx-large;
+}
+
+
+.square {
+    border: solid 2px #fff;
+    width: 180px;
+    height: 60px;
+    right: 2px;
+    top: 3px;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    color: #fff;
+    font-family: "Chalkduster";
+    font-size: large;
+    padding-top: 1.5%;
+
+}
+
+.square:hover{
+	border: solid 2px #4CAF50;
+	color: #4CAF50;
+	cursor: pointer;
+
+}
+
+.nav{
+	width: 100%;
+	height: 50px;
+	background-color: red;
+	z-index: 3;
+	color: #fff;
+}
+
+.column1 {
+	float: left;
+	width: 50vw;
+	height: 60vh;
+	
+}
+
+.flex-container {
+
+
+   	
+    display:flex;
+    width: 100%;
+    height: 600px;
+    background-color: transparent;
+    z-index: 100;
+    padding-top: 60%;
+
+}
+
+
+
+
+.video{
+    position: relative;
+
+    min-height: 1px;
+    width: 50%;
+	padding-left: 10%;
+	padding-top: 10%;
+	margin: 5px auto;
+    text-align: block;
+	
+    
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
+.content{
+	position: relative;
+   
+    min-height: 1px;
+    width: 50%;
+	padding-left: 10%;
+	padding-top: 10%;
+	margin: 5px auto;
+    text-align: block;
+
+}
+
+.paragraph{
+	text-align: justify;
+	padding-right: 15%;
+	padding-left: 5%;
+	padding-bottom: 10%;
+	
+
+}
+
+.headerspara{
+	font-family: "Chalkduster";
+	color: #4CAF50;
+}
+
+
+
+
+/*.how-it-works__teaser, .cities {
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #f7f8f7;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 0;
+    color: #333;
+} */
+
+.header_slogan{
+    
+    color: white;
+    border-top: 80vh;
+    font-size: 2.6rem;
+    text-align: center;
+    height: 40vh;
+    width: 80wh;
+    padding-top: 30vh;
+
+}
+
+#irresistiblepagebackground {
+	background: #f7f8f7;
+}
+
+/* input form*/
+
+
+input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+
+}
+
+
+
+.inputdiv {
+    border-radius: 5px;
+    background-color: transparant;
+    padding: 20px;
+    position: relative;
+    text-align: center;
 }
