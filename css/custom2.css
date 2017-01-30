@@ -30,6 +30,7 @@ body {
 .pagebackground {
 	position: relative;
 	height: 96vh;
+	min-height: 600px;
 	width: 100vw;
 	color: #333;
 	text-align: center;
@@ -41,14 +42,10 @@ body {
 
 .irresistiblepage {
 	height: 100%;
-	/*width: 80%;*/
 	max-width: 1228px;
 	margin-right: auto;
 	margin-left: auto;
-	/*margin: 0 10vw 0 10vw;*/
-	/*background: #cbf5d4;*/
 	z-index: 51;
-
 }
 .irresistibleheader {
 	font-size: 3rem;
@@ -72,13 +69,10 @@ body {
 }
 
 .menuoptions {
-	/*width: 100%;*/
 	width: 1228px;
 	height: 65%;
 	min-height: 462px;
-	/*background: #333;*/
 	display: inline-flex;
-	/*margin: 0 3%;*/
 	z-index: 52;
 	color: #000;
 }
@@ -86,7 +80,6 @@ body {
 .menuitem {
 	display: inline-block;
 	text-decoration: none;
-	/*width: 30%;*/
 	width: 388px;
 	height: 100%;
 	/*height: 462px;*/
@@ -107,7 +100,6 @@ body {
 	opacity: 0.5;
 }
 .hidden-first {
-	/*position: relative;*/
 	height: 50%;
 	width: 388px;
 	background: #817676;	
@@ -202,7 +194,7 @@ body {
 .order-now-but {
 	color: #fff;
 	font-size: 2.5rem;
-	line-height:2.5rem;
+	line-height:2rem;
 	background: #E96946;
 	margin: 5% 5% 2% 5%;
 	padding: 4% 20%;
@@ -224,9 +216,9 @@ body {
 }
 .contact-us-main {
 	max-width: 1250px;
+	padding-left: 2%;
 	height: 86%;
 	margin: 0 auto 7% auto;	
-	border: 1px solid black;
 	min-width: 1090px;
 	min-height: 555px;
 }
@@ -234,26 +226,23 @@ body {
 	float: left;
 	height: 55.5%;
 	width: 48.5%;
-	min-width: 500px;
-	min-height: 300px;
+	min-width: 440px;
+	min-height: 350px;
 	margin: 4.5% 1.5% 5% 0;
-	padding: 40px 5% 0 4%;
-	border: 1px solid black;
+	padding: 20px 5% 0 4%;
 }
 #what-we-do {
 	background: #fff;
-	border: transparent;
 }
 .who-to-contact {
 	width:80%;
 	margin:0 10%;
 	height: 25%;
-	border: 1px solid black;
-	clear:left;	
+	display: inline-block;
 }
 
 .what-we-do-list {
-	margin-top: 1rem;
+	margin-top: 1.2rem;
 	height: 14.5%;
 	line-height: 0;
 	font-size: calc(1.5rem + 0.2vw);
@@ -263,4 +252,58 @@ body {
 .what-we-do-list img{
 	vertical-align: middle;
 	transform: translateY(-10%);
+}
+
+#contact-main-header {
+	font-size: 4.5rem;
+	margin-top: 4rem;
+	margin-bottom: 5rem;
+}
+#contact-main-questions {
+	font-size: 2.5rem;
+	margin-bottom: 2rem;
+}
+#contact-help {
+	font-size: 2rem;
+	margin-bottom: 4rem;
+}
+#contact-us-phone-details {
+	float:left;	
+	margin-left:10%;
+	width: 80%;
+	text-align: left;
+}
+#contact-us-phone-details img {
+	vertical-align: top;
+	display: inline-block;
+}
+#contact-us-txt {
+	line-height: 4rem;
+	font-size: 2rem;
+	margin-left : 96px;
+	margin-bottom: 2rem;
+}
+#contact-us-tel {
+	display: inline-block;
+}
+#contact-us-details img {
+	margin: -5px 21px 0 50px;
+}
+#contact-us-details span {
+	font-size: 3rem;
+	margin-left: -8px;
+}
+#contact-us-details {
+	display: inline-block;
+	height: 80px;
+}
+#who-to-book-with {
+	padding-top: 4rem;
+	font-size: 3rem;
+	margin-bottom: 50px;
+}
+#who-to-thanks {
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+	margin: 30px 5% 0 5%;
 }
