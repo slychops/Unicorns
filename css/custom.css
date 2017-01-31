@@ -6,7 +6,634 @@
     src: url(fonts/fontName.woff);
 }*/
 
+
+/*@font-face {
+    font-family: 'Chalkduster';
+    src:url('webfonts_Chalkduster/Chalkduster.ttf.woff') format('woff'),
+        url('webfonts_Chalkduster/Chalkduster.ttf.svg#Chalkduster') format('svg'),
+        url('webfonts_Chalkduster/Chalkduster.ttf.eot'),
+        url('webfonts_Chalkduster/Chalkduster.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+}*/
+
+@font-face {
+    font-family: Fish;
+    src: url(../fonts/fish_chips.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
 html, body {
-	height: 100%;
+	height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 16px;
+}
+html {
+    font-size: 10px;
+    font-family: Fish, Georgia, Verdana;
+    line-height: 10px;  
+    letter-spacing: 1px;
+    font-weight: 700;   
+}
+h1 #nyleheader{
+    margin: inherit;
+    text-align: center;
+    padding-top: 50px; 
+    
+    color: #000; /*// readable; */
+}
+h3{
+    text-align: center;
+    background-color: solid red; 
+}
+/*h1{ 
+font-family: "Chalkduster";
+}*/
+
+
+
+.header_wrapper{
+	height: 80vh;
+    width: 100%;
+    background: url('../images/caterwingsheader.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+
+#logo {
+  
+    width: 180px;
+    height: 60px;
+    left: 2px;
+    top: 3px;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    color: #fff;
+    /*font-family: "Chalkduster";*/
+    padding-top: 1.5%;
+    font-size: xx-large;
+}
+
+
+.square {
+    border: solid 2px #fff;
+    width: 180px;
+    height: 60px;
+    right: 2px;
+    top: 3px;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    color: #fff;
+    /*font-family: "Chalkduster";*/
+    font-size: large;
+    padding-top: 1.5%;
+
+}
+
+.square:hover{
+	border: solid 2px #4CAF50;
+	color: #4CAF50;
+	cursor: pointer;
+
+}
+
+.nav{
 	width: 100%;
+	height: 50px;
+	background-color: red;
+	z-index: 3;
+	color: #fff;
+}
+
+.column1 {
+	float: left;
+	width: 50vw;
+	height: 60vh;
+    line-height: 2rem;
+}
+
+.flex-container {
+    display:flex;
+    width: 100%;
+    height: 600px;
+    background-color: transparent;
+    z-index: 100;
+    padding-top: 60%;
+
+}
+
+
+
+
+.video{
+    position: relative;
+    min-height: 1px;
+    width: 50%;
+	padding-left: 10%;
+	padding-top: 10%;
+	margin: 5px auto;
+    text-align: block;
+	
+    
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.content{
+	position: relative;
+    height: 100%;
+    min-height: 1px;
+    width: 50%;
+	padding-left: 10%;
+	padding-top: 10%;
+	margin: 5px auto;
+    text-align: block;
+}
+
+.paragraph{
+	text-align: justify;
+	padding-right: 15%;
+	padding-left: 5%;
+	padding-bottom: 10%;
+}
+
+.headerspara{
+	/*font-family: "Chalkduster";*/
+	color: #4CAF50;
+}
+
+
+
+.header_slogan{
+    
+    color: white;
+    border-top: 80vh;
+    font-size: 2.6rem;
+    text-align: center;
+    height: 40vh;
+    width: 80wh;
+    padding-top: 30vh;
+
+}
+
+#irresistiblepagebackground {
+	background: #f7f8f7;
+}
+
+/* input form*/
+
+
+input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /*box-sizing: border-box;*/
+    position: relative;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.inputdiv {
+    border-radius: 5px;
+    background-color: transparant;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+
+
+
+
+/*Richards section*/
+.pagebackground {
+    position: relative;
+    height: 96vh;
+    min-height: 600px;
+    width: 100vw;
+    color: #333;
+    text-align: center;
+    z-index: 50
+}
+#irresistiblepagebackground {
+    background: #f7f8f7;
+}
+
+.irresistiblepage {
+    height: 100%;
+    max-width: 1228px;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 51;
+}
+.irresistibleheader {
+    font-size: 3rem;
+    line-height: 5vh;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 5vh 0 0 0;
+    z-index: 52;
+}
+.linktopackages {
+    z-index:52;
+    width: 100%;
+    /*width: 1228px;*/
+    line-height: 6vh;
+    padding: 0 0 1vh 0;
+    margin-bottom: 2vh;
+}
+
+.linktopackages a{color: #D96946;}
+
+.menuoptions {
+    width: 1228px;
+    height: 65%;
+    min-height: 462px;
+    display: inline-flex;
+    z-index: 52;
+    color: #000;
+}
+
+.menuitem {
+    display: inline-block;
+    text-decoration: none;
+    width: 388px;
+    height: 100%;
+    /*height: 462px;*/
+    color: #000;
+    font-weight: 600;
+    margin: 0 10px;
+    border: solid #bcbcbc;
+    border-width: 1px 0.5px 1px 1px; 
+    box-shadow: 0.1px 0.1px 0.1px #888;
+    transition-duration: 0.2s;
+}
+
+.menuitem:hover {
+    transform: translateY(-5px);
+    box-shadow: 2px 3px 10px #adaaaa;
+}
+.menuitem:hover .hidden-first{
+    opacity: 0.5;
+}
+.hidden-first {
+    height: 50%;
+    width: 388px;
+    background: #817676;    
+    top:0;
+    left:0;
+    transform: translate(0, -200%);
+    opacity: 0;
+    display: flex;
+}
+.try-this-out {
+    width: 80%;
+    height: 20%;
+    font-size: 4rem;    
+    line-height: 4rem;
+    margin:20% 10%;
+    padding: 10% 0 5% 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.orderimage {
+    height: 50%;
+    width: 100%;    
+}
+#orderimageone {
+    background: url('../images/special1.jpg');
+    background-size: cover;
+}
+#orderimagetwo {
+    background: url('../images/special2.jpg');
+    background-size: cover;
+}
+#orderimagethree {
+    background: url('../images/special3.jpg');
+    background-size: cover;
+}
+
+.orderinformation {
+    height: 50%;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    display: block;
+    text-transform: uppercase;
+}
+.order-name {
+    padding-top: 2%;
+    height: 15%;
+    font-size: 2.5rem;
+}
+
+.order-name-alt {
+    padding-bottom: 30px;
+    padding-top:2%;
+    font-size: 1.7rem;
+    /*line-height: 27px;*/
+    /*height:57px;*/
+}
+
+.order-name-desc {
+    width: 100%;
+    /*height: 96px;*/
+    height: 30%;
+    margin-bottom: 10px;
+    display: block;
+    line-height: 2rem;
+    /*display:inline-block;*/
+}
+.more-info-promo{
+    /*background:red;*/
+    padding: 1rem;
+    height: 100%;
+    width: 33.33%;
+    float: left;
+}
+.promotion-info-bold {
+    font-size: 2.5rem;
+}
+.promotion-info-sub {
+    font-size: 1.5rem;
+    text-transform: none;
+}
+.red {
+    background:  red;
+}
+.blue {
+    background: blue;
+}
+.yellow {
+    background: green;
+}
+.order-now-but {
+    color: #fff;
+    font-size: 2.5rem;
+    line-height:2rem;
+    background:#45a049 ;
+    margin: 5% 5% 2% 5%;
+    padding: 4% 20%;
+    border-radius: 2px;
+    transition-duration: 0.1s;
+}
+.order-now-but:hover {
+    box-shadow: inset 0px 0px 2px black;
+    /*margin: 5.2% 5.1% 2.2% 5.1%;*/
+    margin: calc(5% + 2px) calc(5% + 2px) calc(2% + 2px) calc(5% + 1px);
+
+}
+
+
+#contact-us {
+    background: #bfefbf;
+    background: url("../images/contact-us-background.jpg") no-repeat center;
+    background-size: cover;
+}
+.contact-us-main {
+    max-width: 1250px;
+    padding-left: 2%;
+    height: 86%;
+    margin: 0 auto 7% auto; 
+    min-width: 1090px;
+    min-height: 555px;
+}
+.specsholder {
+    float: left;
+    height: 55.5%;
+    width: 48.5%;
+    min-width: 440px;
+    min-height: 350px;
+    margin: 4.5% 1.5% 5% 0;
+    padding: 20px 5% 0 4%;
+}
+#what-we-do {
+    background: #fff;
+}
+.who-to-contact {
+    width:80%;
+    margin:0 10%;
+    height: 25%;
+    display: inline-block;
+}
+
+.what-we-do-list {
+    margin-top: 1.2rem;
+    height: 14.5%;
+    line-height: 0;
+    font-size: calc(1.5rem + 0.2vw);
+    text-align: left;
+
+}
+.what-we-do-list img{
+    vertical-align: middle;
+    transform: translateY(-10%);
+}
+
+#contact-main-header {
+    font-size: 4.5rem;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+#contact-main-questions {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+#contact-help {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+#contact-us-phone-details {
+    float:left; 
+    margin-left:10%;
+    width: 80%;
+    text-align: left;
+}
+#contact-us-phone-details img {
+    vertical-align: top;
+    display: inline-block;
+}
+#contact-us-txt {
+    line-height: 4rem;
+    font-size: 2rem;
+    margin-left : 96px;
+    margin-bottom: 2rem;
+}
+#contact-us-tel {
+    display: inline-block;
+}
+#contact-us-details img {
+    margin: -5px 21px 0 50px;
+}
+#contact-us-details span {
+    font-size: 3rem;
+    margin-left: -8px;
+}
+#contact-us-details {
+    display: inline-block;
+    height: 80px;
+}
+#who-to-book-with {
+    padding-top: 4rem;
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+#who-to-thanks {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin: 30px 5% 0 5%;
+}
+
+/*Munishes section*/
+.firstLayer {
+    position: absolute;
+    width: 100%;
+
+}
+ 
+ .secondLayer{
+    background: #eee url("../images/section3.jpg") no-repeat;
+    background-size: cover;
+    top: 0;
+    max-width: : 100%;
+    height: 72vh;
+    opacity: 0.50; 
+ }
+ 
+.blocks {
+    opacity: 1;
+    position: relative;
+    padding-left: 60px;
+    cursor: pointer;
+    
+}
+
+    
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+
+.block {
+    position: relative; 
+    margin: 15px;
+    padding-top: 10px;
+    display: inline-block;
+    text-align: center;
+}
+.block img {
+    
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+}
+.block img:hover {
+    -webkit-transform: rotate(-15deg) scale(1.4);
+    transform: rotate(-15deg) scale(1.4);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    }
+
+.block p {
+  
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+  position: inherit;
+  
+}
+
+
+
+.footer{
+    height: 50vh;
+    width: 100vw;
+    background: #000 url("../images/footerBackground.jpg") no-repeat;
+    background-size: cover;
+
+}
+.footer h2, h3{
+    margin: inherit;
+    text-align: center;
+    padding-top: 50px; 
+    background-position: 3000px 4000px;
+    color: #fff;
+}
+.footer button{
+    height: 50px;
+    width: 130px ;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    margin-top: 20px; 
+    left:40%;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.footer  button:hover {
+    background-color: #fff; /* Green */
+    color: black;
+    font-size : 18px; 
+}
+
+.footer p {
+    padding: 20px 0px 20px 0px; 
+    margin-left: 40px;
+    color: white;
+    line-height: 1.8rem;
+}
+
+/*.yetanotherbutton {
+    height: 40%;
+    width: 100%;
+    background: green;
+}
+
+.yetanotherbutton .order-now-but {
+    width: 50%;
+}*/
+
+#anoverwrite {
+    width: 13%;
+    font-size: larger;
+    background-color: #4CAF50;
+    color: white;
+    padding: 13px 20px;
+    margin: 4% 0 0 50%;
+    transform: translateX(-50%);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
 }
