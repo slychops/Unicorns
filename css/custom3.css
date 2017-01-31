@@ -1,0 +1,118 @@
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100vh;
+	width: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+
+h1 {
+	margin: inherit;
+	text-align: center;
+	padding-top: 50px; 
+	
+	color: #000; /*// readable; */
+}
+h3{
+	text-align: center;
+	background-color: solid red; 
+}
+.firstLayer {
+    position: absolute;
+    width: 100%;
+
+}
+ 
+ .secondLayer{
+	background: #eee url("../images/section3.jpg") no-repeat;
+	background-size: cover;
+	top: 0;
+	max-width: : 100%;
+	height: auto;
+	opacity: 0.50; 
+ }
+ 
+.blocks {
+    opacity: 1;
+    position: relative;
+    padding-left: 60px;
+    cursor: pointer;
+    
+}
+
+    
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+
+.block {
+	position: relative; 
+	margin: 15px;
+	padding-top: 10px;
+	display: inline-block;
+	text-align: center;
+}
+.block img {
+	
+	-webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+}
+.block img:hover {
+	-webkit-transform: rotate(-15deg) scale(1.4);
+	transform: rotate(-15deg) scale(1.4);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	}
+
+.block p {
+  
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+  position: inherit;
+  
+}
+
+
+
+.footer{
+	height: 50vh;
+	width: 100vw;
+	background: #000 url("../images/footerBackground.jpg") no-repeat;
+	background-size: cover;
+
+}
+.footer h2, h3{
+	margin: inherit;
+	text-align: center;
+	padding-top: 50px; 
+	background-position: 3000px 4000px;
+	color: #fff;
+}
+.footer button{
+	height: 50px;
+	width: 130px ;
+	border: 1px solid white;
+	background-color: transparent;
+	color: white;
+  	font-size: 16px;
+  	margin-top: 20px; 
+  	left:40%;
+  	position: relative;
+  	cursor: pointer;
+  	
+}
+
+.footer  button:hover {
+    background-color: #fff; /* Green */
+    color: black;
+    font-size : 18px; 
+}
+
+.footer p {
+	padding: 20px 0px 20px 0px; 
+	margin-left: 40px;
+	color: white;
+}
